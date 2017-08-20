@@ -24,6 +24,7 @@ public class Application {
     	return new Pessoa("Daniel", "danieltavares.web@gmail.com");
     }
 
+    
   public static void main(String[] args) {
       ApplicationContext context = new AnnotationConfigApplicationContext(Application.class);
       MensagemImpressao impressao = context.getBean(MensagemImpressao.class,Pessoa.class);
